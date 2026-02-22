@@ -1,0 +1,6 @@
+{
+  "experiments": [
+    {"id": "1", "name": "Three.js Demo", "tech": "Three.js", "description": "3D graphics experiment"},
+    {"id": "2", "name": "WebGL Shaders", "tech": "WebGL", "description": "Shader effects"}
+  ]
+}
