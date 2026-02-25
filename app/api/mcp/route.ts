@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
+  let requestId: number | string = 0;
+
   try {
     const body = await request.json();
     const { method, params } = body;
@@ -38,8 +40,8 @@ export async function POST(request: NextRequest) {
         throw new Error(`Unknown method: ${method}`);
     }
 
-    return NextResponse.json({ jsonrpc: '2.0', id: body.id, result });
+    return NextResponse.json({ jsonrpc: '2.0', id: requestId, result });
   } catch (error) {
-    return NextResponse.json({ jsonrpc: '2.0', id: body.id || 1, error: { code: -32000, message: error instanceof Error ? error.message : 'Error' } }, { status: 500 });
+    return NextResponse.json({ jsonrpc: '2.0', id: requestId || 1, error: { code: -32000, message: error instanceof Error ? error.message : 'Error' } }, { status: 500 });
   }
 }

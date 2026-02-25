@@ -1,10 +1,10 @@
-import { Flask } from 'lucide-react';
+import { Beaker } from 'lucide-react';
 
 export default function Home() {
   const tools = [
-    { name: 'get_all', description: 'Get all items', icon: Flask, params: [] },
-    { name: 'get_by_id', description: 'Get item by ID', icon: Flask, params: ['id (required)'] },
-    { name: 'search', description: 'Search items', icon: Flask, params: ['query (required)'] }
+    { name: 'get_all', description: 'Get all items', icon: Beaker, params: [] },
+    { name: 'get_by_id', description: 'Get item by ID', icon: Beaker, params: ['id (required)'] },
+    { name: 'search', description: 'Search items', icon: Beaker, params: ['query (required)'] }
   ];
 
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <div className="container mx-auto px-6 py-6">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-cyan-600">
-              <Flask className="h-5 w-5 text-white" />
+              <Beaker className="h-5 w-5 text-white" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">Lab Experiments</h1>
@@ -32,7 +32,7 @@ export default function Home() {
           <h2 className="mb-6 text-5xl font-bold text-white">Lab Experiments</h2>
           <p className="mb-8 text-lg text-slate-300">Your comprehensive Lab Experiments with MCP integration.</p>
           <a href="/api/mcp" className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 px-6 py-3 font-medium text-white transition-all hover:from-cyan-600 hover:to-cyan-700">
-            <Flask className="h-4 w-4" /> MCP Endpoint
+            <Beaker className="h-4 w-4" /> MCP Endpoint
           </a>
         </div>
       </section>
