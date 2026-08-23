@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
-  let requestId: number | string = 0;
+  const requestId: number | string = 0;
 
   try {
     const body = await request.json();

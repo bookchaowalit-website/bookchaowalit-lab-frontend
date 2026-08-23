@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   title: "Lab Experiments | Bookchaowalit",
-  description: "Log experiments and outcomes.",
+  description: "A working log for ideas tested, signals observed, and results worth keeping.",
   keywords: ["lab", "portfolio"],
   authors: [{ name: "Bookchaowalit", url: "https://bookchaowalit.com" }],
   creator: "Bookchaowalit",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "Lab Experiments | Bookchaowalit",
-    description: "Log experiments and outcomes.",
+    description: "A working log for ideas tested, signals observed, and results worth keeping.",
     siteName: "Bookchaowalit",
   },
   robots: { index: true, follow: true },
